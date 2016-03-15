@@ -45,6 +45,7 @@
 	background-color: white;
 	padding: 20px;
 	margin-bottom: 20px;
+	box-shadow:5px 5px 5px #888;
 }
 .article_passage h2{
 	text-align: left;
