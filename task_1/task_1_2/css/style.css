@@ -1,0 +1,214 @@
+*{
+	margin:0;
+	padding:0;
+}
+#header{
+	width: 100%;
+	height: 60px;
+	background-color: #666;
+}
+#header .header_logo{
+	float: left;
+}
+#header .header_logo img{
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 40px;
+}
+#header .header_nav{
+	float: right;
+	height: 50px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+#header .header_nav li{
+	display: inline-block;
+}
+#header .header_nav a:link, #header .header_nav a:visited{
+	text-decoration: none;
+	color: white;
+}
+#header .header_nav a:hover{
+	text-decoration: none;
+	color: red;
+}
+#header .header_nav a:active{
+	text-decoration: none;
+	color: gray;
+}
+#article{
+	background-color: #DCDCDC;
+	margin: 0 auto;
+	padding: 20px;
+}
+#article .article_passage{
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.article_passage h2{
+	text-align: left;
+	font-family: "Microsoft Yahei";
+	font-size: 26px;
+	font-weight: 600;
+}
+.article_passage h3{
+	text-align: left;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 50px;
+}
+.article_passage p.passage-info{
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 30px;
+	color: #A9A9A9;
+	font-size: 15px;
+	font-weight: 400;
+	text-indent: 0;
+}
+.article_passage p{
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+	text-indent: 0px;
+}
+.article_passage ul li{
+	list-style: none;
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: 600;
+	text-indent: 10px;
+}
+.article_passage div.picture{
+	border: solid 1px #DCDCDC;
+	margin: 20px;
+	width: 240px;
+}
+.article_passage .article_picture{
+	margin-left: 40px;
+	
+}
+.atricle_picture .picture{
+	border: solid 1px #DCDCDC;
+	margin: 20px;
+	width: 240px;
+}
+.article_picture .picture p{
+	text-align: center;
+
+}
+.article_picture .picture img{
+	width: 200px;
+	height: 150px;
+	margin: 20px;
+}
+.article_passage ol{
+	margin-left: 50px;
+}
+.article_passage ol li{
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 25px;
+	font-size: 15px;
+	font-weight: 600;
+	text-indent: 10px;
+}
+.article_passage table{
+	border: 1px solid  #DCDCDC;
+	width: 100%;
+	border-spacing: 0;
+}
+.article_passage tr th{
+	text-align: left;
+	background-color: black;
+	color: white;
+	padding:5px;
+}
+.article_passage tr td{
+	padding: 5px;
+	border: 1px solid  #DCDCDC;
+}
+.article_passage tr.table-sum{
+	background-color: #DCDCDC;
+	border: 1px solid  #DCDCDC;
+}
+#sidebar{
+	padding: 20px;
+	background-color:white;
+}
+#sidebar h2{
+	margin-left: 20px;
+	padding-left: 10px;
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	border-left: 3px solid #DCDCDC;
+}
+
+#sidebar div.sidebar_content label{
+	float: left;
+	width: 30%;
+	text-align: right;
+	padding-right: 10px;
+}
+div#sidebar div.sidebar_content{
+	display: block;
+	margin: 20px;
+}
+div#sidebar div.tip{
+	display: block;
+	margin: 20px;
+	height: 25px;
+}
+#sidebar .tip .tip-left{
+	float: left;
+	width: 30%;
+	height: 25px;
+}
+div#sidebar div.tip div.tip-right{
+	float: left;
+	width: 30%;
+}
+div#sidebar div.tip p{
+	text-align: left;
+	font-family: "Microsoft Yahei" ;
+	line-height: 30px;
+	color: #A9A9A9;
+	font-size: 15px;
+	font-weight: 400;
+	text-indent: 0;
+}
+div#sidebar div.sidebar_content input[type="submit"]{
+	width: 100%;
+	background: #4169E1;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+}
+div#sidebar div.sidebar_content textarea{
+	width: 760px;
+	height: 100px;
+}
+div#footer{
+	background-color: black;
+	height: 40px;
+	padding: 20px;
+}
+
+div#footer p{
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
