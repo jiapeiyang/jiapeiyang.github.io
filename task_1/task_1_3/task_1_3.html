@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>三栏式布局</title>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.mainbody{width: 100%;margin: 0 auto;background-color: #eee;padding: 20px;position: relative;overflow: hidden;}
-		.left{width: 160px;padding: 20px;background-color: white; float: left;position: relative;}
-		.left .group_name {top:20px;right: 30px;position: absolute;}
-		.right {width: 120px; background-color: white;float: right;margin-right: 40px}
-		.right .members{padding: 20px;}
-		.middle{margin-left: 20px;margin-right: 20px;background-color: white;position: absolute;top:20px;margin-left: 220px;margin-right: 200px;}
-		.middle p{padding: 20px;}
-
+	<meta charset="utf-8">
+	<title>task3-xilixili</title>
+	<style>
+	body{
+		margin:0px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	}
+	div{
+		box-sizing: border-box;
+	}
+	.main-content,.left-team,.right-personal,.center-introduce{
+		padding:20px;
+		border:1px solid #999;
+	}
+	.main-content {
+		background-color: #eee;
+	}
+	.left-team {
+		width: 200px;
+		float: left;
+		background-color: #fff;
+	}
+	.right-personal {
+		width: 120px;
+		float: right;
+		background-color: #fff;
+	}
+	.center-introduce {
+		word-wrap: break-word;
+		margin-left:220px;
+		margin-right:140px;
+		background-color: #fff;
+	}
+	.center-introduce p{
+		line-height:30px;
+		padding-left:10px;
+	}
+	.teamlogo {
+		width: 80px;
+		height: 80px;
+		float: left;
+	}
+	.teamname {
+		display: inline-block;
+		font-size: 15px;
+		font-weight: 700;
+		float: left;
+		padding-left:20px;
+	}
+	.team_link{
+		text-decoration: none;
+	}
+	.clearfix{
+		clear: both;
+	}
+	.personal-logo {
+		margin:10px 0;
+		width: 80px;
+		height: 80px;
+		border:1px solid #999;
+	}
 	</style>
-
 </head>
 <body>
-	<div class="mainbody">
-		<div class="left">
-			<div class="picture_group"><img src="images/xiaogou.jpg" width="80px" height="80px"></div>
-			<div class="group_name">瑞风</div>
+	<div class="main-content">
+
+		<div class="left-team">
+			<img class="teamlogo" src="images/xiaogou.jpg" alt="瑞风-logo">
+			<div class="teamname">瑞风</div>
 		</div>
-		<div class="middle"><p>一年之计在于春，经过漫长的冬季，又是开学之际，众多莘莘学子纷纷又回到校园，投入学习之中。百度前端技术学院也在此时为大家带来了一道前端学习的饕鬄盛宴。
+		<div class="right-personal">
+			<img class="personal-logo" src="images/xiaogou.jpg" alt="">
+			<img class="personal-logo" src="images/xiaogou.jpg" alt="">
+			<img class="personal-logo" src="images/xiaogou.jpg" alt="">
+			
+		</div>
+		<div class="center-introduce">
+			<h2>Hello 我们是瑞风</h2>
+			<p>一年之计在于春，经过漫长的冬季，又是开学之际，众多莘莘学子纷纷又回到校园，投入学习之中。百度前端技术学院也在此时为大家带来了一道前端学习的饕鬄盛宴。
 
 经过2年多的尝试与摸索，我们确认了实践、交流与分享，对于技术学习而言，是非常有效且高效的手段，因此，本次春季班，我们特别搭建了一个线上平台系统，通过这个系统向学员们发送编码任务，学员们在这个系统上提交作业地址，进行相互的代码评审（Code Review）与评价，同时在平台中积累自己的学习总结笔记并分享给大家。
 
 为了让大家更加有动力进行这些学习方式，我们在整个春季班的学习过程中，融入了竞赛模式，任务完成得好的，评价仔细认真的，笔记写得对他人有帮助的，我们都会通过一套积分系统来进行排名。
 
-在头一个半月的任务“闯关”之后，我们还特意安排了一个很有挑战性，能够发挥大家创新能力的大任务环节，具体任务当然暂时保密。这个终极BOSS的挑战会作为整个春季班的最终环节。</p></div>
-		<div class="right">
-			
-				<div class="members">
-					<div><img src="images/xiaogou.jpg" width="80px" height="80px"></div>
-				</div>
-				<div class="members">
-					<div><img src="images/xiaogou.jpg" width="80px" height="80px"></div>
-				</div>
-				<div class="members">
-					<div><img src="images/xiaogou.jpg" width="80px" height="80px"></div>
-				</div>
-			
+在头一个半月的任务“闯关”之后，我们还特意安排了一个很有挑战性，能够发挥大家创新能力的大任务环节，具体任务当然暂时保密。这个终极BOSS的挑战会作为整个春季班的最终环节。
+			</p>
 		</div>
+		<div class="clearfix"></div>
 	</div>
 </body>
 </html>
