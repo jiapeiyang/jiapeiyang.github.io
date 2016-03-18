@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第一个抽奖程序</title>
+	<script type="text/javascript">
+	//抽奖数据，易逗号分隔  split
+		var alldata="人事部 李某某,工程部 张三,培训部 婷婷,培训部 小陈,研发部 王某某";
+		//分隔字符串
+		var alldataArr=alldata.split(",");
+		var num=alldataArr.length-1;
+		var currentIndex=0;
+		//定时器
+		var timer;
+		function change(){
+			var  oknum= document.getElementById("oknum")
+			oknum.innerHTML=alldataArr[getRnd(0,num)];
+		}
+		//开始
+		function start(){
+			clearInterval();
+			timer=setInterval('change()',100);
+		}
+		//停止
+		function stop(){
+			clearInterval(timer);
+			var show=document.getElementById("show");
+			show.value=document.getElementById("oknum").innerText;
+		}
+		
+
+		//根据数组取得随机数
+		function getRnd(min,max){
+			return parseInt(Math.random()*(max-min+1));
+		}
+	</script>
+</head>
+<body>
+	<div id="oknum" name="oknum">请单击开始抽奖</div>
+	<button onclick="start()" accesskey="s">开始抽奖<u>s</u></button>
+	<button onclick="stop()" accesskey="o">停止<u>o</u></button>
+
+	<input type="text" value="" id="show"></input>
+</body>
+</html>
