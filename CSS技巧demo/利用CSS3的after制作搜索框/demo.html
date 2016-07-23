@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>圆角</title>
+  <style type="text/css">
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid #333;
+      position: relative;
+    }
+
+    div::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 60px;
+      border-radius: 5px;
+      background: #333;
+      top: 39px;
+      right: -21px;
+      transform: rotate(-45deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
